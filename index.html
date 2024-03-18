@@ -51,9 +51,9 @@
 	<p>
 	<b>Contents</b>
       <ul>
-        <li><a href="#model-overview">Model Overview</a></li>
-        <li><a href="#diffae-samples">Enhanced Speech by Diffusion Autoencoders</a></li>
-        <li><a href="#tts-samples">Synthesized Speech using Text</a></li>
+        <li><a href="#Fine-tune">Fine-tune method</a></li>
+        <li><a href="#diffae-samples">Samples</a></li>
+        <li><a href="#tts-samples">Total objective evaluation results</a></li>
       </ul>
 	</p>   
 
@@ -62,18 +62,18 @@
 
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">		
-	<h2 id="model-overview" style="text-align: center;">Model Overview</h2>
+	<h2 id="Fine-tune" style="text-align: center;">Fine-tune method</h2>
 	<body>
 	<p style="text-align: center;">
 		<img src="pics/model_framework.jpg" height="500" width="1000">
 	</p>
 	</body>
 		<p>
-			<b>Figure.</b> 
-			The proposed TTS method: (a) Overview of the diffusion autoencoders, which consists of the feature 
-extractor and conditional Denoising Diffusion Implicit Model (DDIM). The dotted line stands for the training process, 
-and the solid line stands for the inference process. (b) In the inference stage, the tex2rep model converts text into 
-representation and conditional DDIM converts representation into mel-spectrogram, which is converted into speech through HiFi-GAN.
+		 <ul>
+                 <li>We used paired data {text, audio} and performed fine-tuning on both the txt2vec and vec2wav models.</li>
+                 <li>We used audio-only data for fine- tuning the vec2wav model, and during testing, txt2vec processes the input in a zero-shot manner.</li>
+                 <li>Without employing any data for fine-tuning, both txt2vec and vec2wav were directly tested on zero-shot inference.</li>
+                 </ul>	
 		</p>
 </div>
 
