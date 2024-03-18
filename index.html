@@ -25,28 +25,27 @@
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
 	<div class="text-center">
-	<h2>Speech Synthesis Model Training on Low-quality Data Using Noise-Robust Diffusion Autoencoders</h2>
+	<h2>An Initial Investigation of Language Adaptation for TTS Systems under Low-resource Scenarios</h2>
 		<!-- [<a href="">Paper</a>] -->
 		
-        <!-- <p class="fst-italic mb-0">
+        <p class="fst-italic mb-0">
           <br>
-            Qiuyu Liu, &nbsp Cheng Gong, &nbsp Chunyu Qiang, &nbsp Tianrui Wang, &nbsp Haoyu Wang, &nbsp  <br>
-			Xixin Wu, &nbsp Longbiao Wang, &nbsp Jianwu Dang 
+            Anonymous submission to Interspeech 2024
       <p></p>
         </p>
-        <p><b>TianJin U</b></p> -->
+        <p><b></b></p> 
 		<br><br>
 	</div>
 	<p>
         <b>Abstract.</b> 
-		Speech synthesis models trained on a large amount of high-quality data have achieved human-like synthetic speech. 
-However, the quality of synthesized speech is highly correlated with the quality of training data. 
-Compared to high-quality data, low-quality data containing some noise is easier to collect in daily scenarios. 
-How to use low-quality data to train text-to-speech (TTS) model has become a hot and challenging topic. 
-In this study, we attempt to train diffusion models using low-quality data to learn robust representation. 
-Additionally, we propose a text-to-representation prediction module for a comprehensive end-to-end speech synthesis approach. 
-We conducted comprehensive subjective and objective evaluations through a series of experiments. 
-Compared with the SSL-based baseline, our model has been proven effective in terms of speech naturalness and similarity.</p>     
+           Self-supervised learning (SSL) representations from massively multilingual models offer a promising solution for low-resource language speech tasks. 
+	   Despite advancements, language adaptation in TTS systems remains an open problem. 
+	   This paper explores the language adaptation ability of ZMM-TTS, a recent SSL-based multilingual TTS system. 
+	   We conducted experiments on 12 languages using limited data with various finetuning configurations. 
+	   We demonstrate that the similarity in phonetics between the pretraining and target languages, as well as the language category, affects the target language’s adaptation performance. 
+	  Additionally, we find that the fine-tuning dataset size and number of speakers influence adaptability. 
+	  Surprisingly, we also observed that using paired data for fine-tuning is not always optimal compared to audio-only data. Beyond speech intelligibility, our analysis covers speaker similarity, language identification, 
+	  and predicted MOS.</p>     
 	  <p>This page is for <b>research demonstration purposes</b> only.</p>
 
 	<p>
