@@ -63,16 +63,11 @@
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">		
 	<h2 id="Fine-tune" style="text-align: center;">Fine-tune method</h2>
-	<body>
-	<p style="text-align: center;">
-		<img src="pics/model_framework.jpg" height="500" width="1000">
-	</p>
-	</body>
 		<p>
 		 <ul>
-                 <li>We used paired data {text, audio} and performed fine-tuning on both the txt2vec and vec2wav models.</li>
-                 <li>We used audio-only data for fine- tuning the vec2wav model, and during testing, txt2vec processes the input in a zero-shot manner.</li>
-                 <li>Without employing any data for fine-tuning, both txt2vec and vec2wav were directly tested on zero-shot inference.</li>
+                 <li><strong>Paired-data fine-tuning: </strong>We used paired data {text, audio} and performed fine-tuning on both the txt2vec and vec2wav models.</li>
+                 <li><strong>Audio-only fine-tuning: </strong>We used audio-only data for fine-tuning the vec2wav model, and during testing, txt2vec processes the input in a zero-shot manner.</li>
+                 <li><strong>Zero-shot: </strong>Without employing any data for fine-tuning, both txt2vec and vec2wav were directly tested on zero-shot inference.</li>
                  </ul>	
 		</p>
 </div>
