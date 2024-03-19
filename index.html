@@ -156,214 +156,37 @@
 				<thead>
 				<tr>
 				<th style="text-align: center">Language</th>
-				<th style="text-align: center">S1</th>
-				<th style="text-align: center">S2</th>
-				<th style="text-align: center">S3</th>
-				<th style="text-align: center">S4</th>
-			        <th style="text-align: center">M1</th>
-				<th style="text-align: center">M2</th>
-				<th style="text-align: center">M3</th>
-				<th style="text-align: center">M4</th>
-			        <th style="text-align: center">L1</th>
-				<th style="text-align: center">L2</th>
-				<th style="text-align: center">L3</th>
-				<th style="text-align: center">L4</th>
+				<th style="text-align: center">Fine-tune method</th>
+				<th style="text-align: center">Fine-tune size</th>
+				<th style="text-align: center">Test text</th>
+				<th style="text-align: center">GT audios</th>
+				<th style="text-align: center">Synthesized audios</th>
 				</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td style="text-align: center">Spk</td>
-						<td style="text-align: center">2</td>
-						<td style="text-align: center">4</td>
-						<td style="text-align: center">10</td>
-						<td style="text-align: center">20</td>
-						<td style="text-align: center">2</td>
-						<td style="text-align: center">4</td>
-						<td style="text-align: center">10</td>
-						<td style="text-align: center">20</td>
-						<td style="text-align: center">2</td>
-						<td style="text-align: center">4</td>
-						<td style="text-align: center">10</td>
-						<td style="text-align: center">20</td>
+						<td style="text-align: center" rowspan="3">bul</td>
+						<td style="text-align: center" rowspan="3">Paired data fine-tune</td>
+						<td style="text-align: center" rowspan="3">2 spk * 50 utts L1' </td>
+						<td style="text-align: center">text1</td>
+						<td style="text-align: center">audio1</td>
 						</tr>
 					<tr>
-						<td style="text-align: center">Utt</td>
-						<td style="text-align: center">12</td>
-						<td style="text-align: center">6</td>
-						<td style="text-align: center">2</td>
-						<td style="text-align: center">1</td>
-						<td style="text-align: center">25</td>
-						<td style="text-align: center">12</td>
-						<td style="text-align: center">5</td>
-						<td style="text-align: center">2</td>
-						<td style="text-align: center">50</td>
-						<td style="text-align: center">25</td>
-						<td style="text-align: center">10</td>
-						<td style="text-align: center">5</td>
+						<td style="text-align: center">text2</td>
+						<td style="text-align: center">audio2</td>
 					<tr>
-						<td style="text-align: center">Total</td>
-						<td style="text-align: center">24</td>
-						<td style="text-align: center">24</td>
-						<td style="text-align: center">20</td>
-						<td style="text-align: center">20</td>
-						<td style="text-align: center">50</td>
-						<td style="text-align: center">48</td>
-						<td style="text-align: center">48</td>
-						<td style="text-align: center">40</td>
-						<td style="text-align: center">100</td>
-						<td style="text-align: center">100</td>
-						<td style="text-align: center">100</td>
-						<td style="text-align: center">100</td>
+						<td style="text-align: center">text2</td>
+						<td style="text-align: center">audio2</td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
 
-		<div class="table-responsive pt-3">
-			<p style="text-align: center;">
-				The following are results on the <b>noisy</b> test set.
-			</p>  
-			<table class="table table-hover pt-2">
-				<thead>
-				<tr>
-				<th style="text-align: center">Ground Truth</th>
-				<th style="text-align: center">Noisy Speech</th>
-				<th style="text-align: center">Baseline (noisy)</th>
-				<th style="text-align: center">Baseline (mixed)</th>
-				<th style="text-align: center">Clean</th>
-				<th style="text-align: center">Noisy</th>
-				<th style="text-align: center">Mixed</th>
-				</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\ground_truth\1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_speech\1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\baseline_noisy\1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\baseline_mixed\1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\clean\1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\noisy\1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\mixed\1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						</tr>
-					<tr>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\ground_truth\2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_speech\2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\baseline_noisy\2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\baseline_mixed\2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\clean\2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\noisy\2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\mixed\2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					</tr>
-					<tr>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\ground_truth\3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_speech\3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\baseline_noisy\3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\baseline_mixed\3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\clean\3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\noisy\3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\mixed\3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					</tr>
-					<tr>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\ground_truth\4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_speech\4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\baseline_noisy\4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\baseline_mixed\4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\clean\4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\noisy\4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\mixed\4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					</tr>
-					<tr>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\ground_truth\5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_speech\5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\baseline_noisy\5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\baseline_mixed\5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\clean\5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\noisy\5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\mixed\5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					</tr>
-					<tr>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\ground_truth\6.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_speech\6.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\baseline_noisy\6.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\baseline_mixed\6.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\clean\6.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\noisy\6.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\mixed\6.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					</tr>
-					<tr>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\ground_truth\7.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_speech\7.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\baseline_noisy\7.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\baseline_mixed\7.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\clean\7.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\noisy\7.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\enhanced\noisy_test\mixed\7.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-</div>
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
 	<h2 id="tts-samples" style="text-align: center;">Synthesized Speech using Text</h2>
 
-		<div class="table-responsive pt-3">
-			<p style="text-align: center;">
-				The tex2rep model converts text into representation and conditional DDIM converts representation
-				into mel-spectrogram, which is converted into speech through HiFi-GAN.
-				<b>"Clean"</b> stands for tex2rep model trained with clean dataset. 
-				<b>"Noisy"</b> stands for tex2rep model trained with noisy dataset. 
-				<b>"Mixed"</b> stands for tex2rep model trained with mixed dataset. 
-				<b>"Baseline"</b> trained with mixed dataset. 
-				The following are results on the text test set.
-			</p> 
-			<table class="table table-hover pt-2">
-			<thead>
-			<tr>
-				<th style="text-align: center">Text</th>
-				<th style="text-align: center">Baseline</th>
-				<th style="text-align: center">Clean</th>
-				<th style="text-align: center">Noisy</th>
-				<th style="text-align: center">Mixed</th>
-			</tr>
-			</thead>
-			<tbody>
-				<tr><td style="text-align: left;vertical-align:middle;width: 600px">Once when I stole a candy bar, he made me take it back and tell the man I stole it and that I'd pay for it. But it was Mom who understood I was just a kid.</td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\baseline\1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\clean\1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\noisy\1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\mix\1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					</tr>
-				<tr><td style="text-align: left;vertical-align:middle;width: 600px">I broke my leg once on the playground swing and it was Mom who held me in her arms all the way to the hospital.</td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\baseline\2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\clean\2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\noisy\2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\mix\2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					</tr>
-				<tr><td style="text-align: left;vertical-align:middle;width: 600px">For many months he had admired a beautiful sports car in a dealer's showroom, and knowing his father could well afford it, he told him that was all he wanted.</td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\baseline\3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\clean\3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\noisy\3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\mix\3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					</tr>
-				<tr><td style="text-align: left;vertical-align:middle;width: 600px">His father told him how proud he was to have such a fine son, and told him how much he loved him. He handed his son a beautiful wrapped gift box.</td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\baseline\4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\clean\4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\noisy\4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\mix\4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					</tr>
-				<tr><td style="text-align: left;vertical-align:middle;width: 600px">Many years passed and the young man was very successful in business. He had a beautiful home and a wonderful family, but realizing his father was very old, he thought perhaps he should go to see him.</td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\baseline\5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\clean\5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\noisy\5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="audios\tts\mix\5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-					</tr>
-				</tr>
-					
-			</tbody>
-			</table>
-			
-		</div>
+		
 </div>
 
 </article>
